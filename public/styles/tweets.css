@@ -13,7 +13,7 @@ article.tweet {
   border-color: lightgrey;
 }
 
-article.tweet.hover {
+article.tweet:hover {
  border-color: black;
  color: black;
 }
@@ -77,14 +77,14 @@ article.tweet footer {
 
 article.tweet footer i {
   position: relative;
-  left: 265px;
+  left: 50px;
   color: white;
   padding-left: 10px;
 }
 
-article.tweet.hover footer i {
+article.tweet:hover footer i {
   position: relative;
-  left: 265px;
+  left: 50px;
   color: #0ABAB5;
   padding-left: 10px;
 }
