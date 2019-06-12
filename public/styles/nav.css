@@ -1,0 +1,33 @@
+nav#nav-bar {
+    background: #00a087;
+    color: #e8fdff;
+    position: fixed;
+    width: -webkit-fill-available;
+    height: 80px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    top: 0;
+    z-index: 1;
+}
+
+#nav-bar span.header {
+    font-size: 35px;
+    /* line-height: 10px; */
+    text-align: center;
+    padding: 16px 10px;
+    float: left;
+    /* display: block; */
+    color: #f2f2f2;
+    /* text-align: center; */
+    /* padding: 14px 16px; */
+    /* text-decoration: none; */
+    /* font-size: 17px; */
+}
+
+#nav-bar img.logo {
+    float: left;
+    width: 80px;
+    height: 80px;
+}

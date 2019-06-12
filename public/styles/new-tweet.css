@@ -1,0 +1,22 @@
+section.new-tweet {
+  background: #EEEEEE;
+  border-radius: 10px;
+  padding:10px;
+  margin: 10px;
+}
+
+.new-tweet h2{
+  margin-top: 1px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid black;
+}
+
+.new-tweet textarea {
+  width: 410px;
+  height: 60px;
+}
+
+.new-tweet span.counter {
+  position: relative;
+  left: 320px;
+}

@@ -1,0 +1,90 @@
+section#tweets {
+  padding-top: 20px;
+}
+
+article.tweet {
+  border-radius: 10px;
+  padding:0px;
+  margin: 10px;
+  background: #EEEEEE;
+  color: grey;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgrey;
+}
+
+article.tweet.hover {
+ border-color: black;
+ color: black;
+}
+
+article.tweet header {
+  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-left: 10px;
+  line-height: 1px;
+  max-height: 60px;
+  display: inline-block;
+  width: 400px;
+
+}
+
+article.tweet header span.name {
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  bottom: 25px;
+}
+
+article.tweet header span.handler {
+  font-size: 15px
+  color: darkgrey;
+  position: relative;
+  bottom: 28px;
+  padding-left: 15px;
+}
+
+article.tweet header img {
+  border-radius: 5px;
+  position: relative;
+  right: 5px;
+  padding-bottom:
+
+}
+
+article.tweet p {
+  background: white;
+  color: black;
+  padding-top: 8px;
+  padding-left: 12px;
+  margin: 0px;
+  margin-bottom: 1px;
+  word-wrap: break-word;
+  min-height: 80px;
+  background-size: 1px;
+}
+
+article.tweet footer {
+  font-size: 12px;
+  color: black;
+  height: 30px;
+  padding-left: 8px;
+  padding-top: 5px;
+  background: white;
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+article.tweet footer i {
+  position: relative;
+  left: 265px;
+  color: white;
+  padding-left: 10px;
+}
+
+article.tweet.hover footer i {
+  position: relative;
+  left: 265px;
+  color: #0ABAB5;
+  padding-left: 10px;
+}
