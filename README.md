@@ -1,8 +1,9 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple, single-page Twitter clone with simple functions, where user can compose tweets that will be updated in the page as a random person's tweet.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+Tweeter is using mongodb as database, saves tweets from and update tweets to mongodb.
+
 
 ## Getting Started
 
@@ -13,5 +14,17 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Dependencies
 
-- Express
+- Express 4.13.4
 - Node 5.10.x or above
+- Body-parser 1.15.2
+- Chance 1.0.2
+- md5 2.1.0
+- Mongodb 2.2.36
+
+## Screenshots
+
+!["Screenshot of compose section slided up"](https://github.com/JingfZhang/tweeter/blob/master/README_pictures/Screen%20Shot%202019-06-13%20at%203.21.30%20PM.png)
+
+!["Screenshot of compose section slided down"](https://github.com/JingfZhang/tweeter/blob/master/README_pictures/Screen%20Shot%202019-06-13%20at%203.21.42%20PM.png)
+
+!["Screenshot of error message"](https://github.com/JingfZhang/tweeter/blob/master/README_pictures/Screen%20Shot%202019-06-13%20at%203.21.52%20PM.png)
