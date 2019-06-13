@@ -5,18 +5,22 @@ section.new-tweet {
   margin: 10px;
 }
 
-.new-tweet h2{
+section.new-tweet h2{
   margin-top: 1px;
   margin-bottom: 15px;
   border-bottom: 2px solid black;
 }
 
-.new-tweet textarea {
+section.new-tweet textarea {
   width: 410px;
   height: 60px;
 }
 
-.new-tweet span.counter {
+section.new-tweet span.counter {
   position: relative;
   left: 320px;
+}
+
+section.new-tweet p.error-message {
+  color: red;
 }

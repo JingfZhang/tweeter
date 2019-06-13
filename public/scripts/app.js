@@ -51,10 +51,19 @@ $(document).ready(function() {
     event.preventDefault();
 
     if ($("#tweet-message").val() === "") {
-      alert("ENTER SOMETHING BEFORE TWEET!!!");
-    } else if ($(".counter").html() < 0) {
+      $(".new-tweet p.error-message").slideDown().text("Cannot tweet empty tweets!");
 
-      alert("TOO MANY WORDS!!!");
+      $("#tweet-message").keydown(function() {
+        $(".new-tweet p.error-message").slideUp();
+      });
+
+    } else if ($(".counter").html() < 0) {
+      $(".new-tweet p.error-message").slideDown().text("Cannot compose more than 140 words!");
+
+      $("#tweet-message").keydown(function() {
+        $(".new-tweet p.error-message").slideUp();
+      });
+
     } else {
       var value = $("#tweet-message").val();
 
