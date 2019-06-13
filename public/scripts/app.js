@@ -17,7 +17,7 @@ function createTweetElement(tweetData) {
   $header.append("<img src=\"" + tweetData["user"]["avatars"]["small"] + "\">");
   $header.append($name);
   $header.append($handler);
-  $tweetMessage.append(tweetData["content"]["text"]);
+  $tweetMessage.text(tweetData["content"]["text"]);
   $footer.append(new Date(tweetData["created_at"]));
   $footer.append("<i class=\"fas fa-flag\"></i>");
   $footer.append("<i class=\"fas fa-retweet\"></i>");
@@ -32,8 +32,6 @@ function createTweetElement(tweetData) {
 function renderTweets(tweets) {
   for (let tweet of tweets) {
     $("#tweets").prepend(createTweetElement(tweet));
-
-    // console.log(createTweetElement(tweet), $("#tweets"));
   }
 }
 
@@ -45,10 +43,9 @@ $(document).ready(function() {
 
     if ($("#tweet-message").val() === "") {
       alert("ENTER SOMETHING BEFORE TWEET!!!");
-
     } else if ($(".counter").html() < 0) {
-      alert("TOO MANY WORDS!!!");
 
+      alert("TOO MANY WORDS!!!");
     } else {
       var value = $("#tweet-message").val();
 
