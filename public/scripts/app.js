@@ -38,6 +38,15 @@ function renderTweets(tweets) {
 $(document).ready(function() {
   $.get("/tweets", function(data) {renderTweets(data)});
 
+  $("section.new-tweet").slideUp();
+
+  $("button.compose").click(function() {
+      $("section.new-tweet").slideToggle(function() {
+        $("#tweet-message").select();
+      });
+  })
+
+
   $("form").on("submit", function(event) {
     event.preventDefault();
 
