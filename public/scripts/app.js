@@ -88,6 +88,8 @@ $(document).ready(function() {
       });
 
       $.get("/tweets", function(data) {$("#tweets").prepend(createTweetElement(data[data.length - 1]))});
+
+      document.getElementById("tweet-message").value = "";
     }
 
   });
