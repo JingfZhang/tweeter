@@ -88,7 +88,7 @@ $(document).ready(function() {
       });
 
       $.get("/tweets", function(data) {$("#tweets").prepend(createTweetElement(data[data.length - 1]))});
-
+      //Clears textarea after submission succeeds
       document.getElementById("tweet-message").value = "";
     }
 
